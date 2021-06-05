@@ -130,7 +130,7 @@ class EmployeeeSystem:
         btn_calculate = Button(Frame2, text="Calculate", command=self.calculate, font=("times new roman", 15),
                                bg="white",
                                fg="black").place(x=100, y=380, height=30, width=100)
-        btn_clear = Button(Frame2, text="Clear", font=("times new roman", 15), bg="white",
+        btn_clear = Button(Frame2, text="Clear", command=self.clear_inputs, font=("times new roman", 15), bg="white",
                            fg="black").place(x=205, y=380, height=30, width=100)
         btn_print = Button(Frame2, text="Print", font=("times new roman", 15), bg="white",
                            fg="black").place(x=320, y=380, height=30, width=270)
@@ -180,6 +180,15 @@ class EmployeeeSystem:
         self.var_email.set(""),
         self.var_address.set(""),
         self.var_department.set("")
+        self.var_year.set(""),
+        self.var_month.set(""),
+        self.var_days.set(""),
+        self.var_hours.set(""),
+        self.var_salary.set(""),
+        self.var_tax.set(""),
+        self.var_nino.set(""),
+        self.var_pension.set(""),
+        self.var_netsalary.set("")
 
     def add_employee(self):
 
